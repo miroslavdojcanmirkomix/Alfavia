@@ -6,3 +6,42 @@
 .team-section{background:#f4f0e7}.team-section-title{display:flex;align-items:end;justify-content:space-between;gap:35px;margin:25px 0 42px}.team-section-title p{max-width:310px;font-size:12px;line-height:1.9;color:var(--muted)}.team-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px 22px}.team-card{min-width:0;background:#fffdf8;border:1px solid #d6cbb7;box-shadow:0 12px 30px #1420310c;overflow:hidden}.team-photo{aspect-ratio:4/5;background:linear-gradient(140deg,#172438,#080d17);overflow:hidden}.team-photo>img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 35%}.team-photo-placeholder{width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:20px;background:radial-gradient(ellipse at 50% 40%,#25334a,#0a101b 75%);color:#d3ae70}.team-photo-placeholder span{font:72px 'Playfair Display',serif;letter-spacing:6px;text-shadow:0 2px 15px #c9a35e33}.team-photo-placeholder small{font-size:8px;letter-spacing:1.6px;color:#b3a180;text-align:center;padding:0 12px}.team-info{padding:24px 23px 27px}.team-index{font-size:9px;letter-spacing:1.4px;color:#a1844e;min-height:25px}.team-demo{display:inline-block;font-size:7px;border:1px solid #c6ad7d;padding:4px 6px;margin-left:7px;letter-spacing:.7px}.team-info h2{font:500 27px/1.2 'Playfair Display',serif;margin:9px 0;color:#1a2635}.team-role{color:#a1844e;font-size:10px;font-weight:700;letter-spacing:.6px;margin:0 0 15px;min-height:30px}.team-desc{font-size:11px;line-height:1.8;color:#68717d;min-height:82px}.team-contact{border-top:1px solid #ded5c7;padding-top:17px;display:flex;flex-direction:column;gap:13px}.team-contact span{font-size:10px;color:#777f86}.team-contact a{font-size:9px;letter-spacing:.7px;color:#8d6c39;text-decoration:none}.team-disclaimer{font-size:10px;line-height:1.8;color:#6f7478;margin:30px 0 0}.team-cta{text-align:center}.team-cta h2{color:#f4f0e7;margin:25px 0 30px}
 @media(max-width:950px){.team-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:620px){.team-grid{grid-template-columns:1fr;gap:25px}.team-section-title{display:block;margin-bottom:28px}.team-info h2{font-size:29px}.team-desc,.team-role{min-height:0}.team-photo{aspect-ratio:4/4.6}.team-section-title p{margin-top:15px}}
+
+
+/* ALFAVIA – finálna úprava responzívnej stránky Náš tím */
+#team-page{display:block;width:100%;max-width:100%;min-width:0;margin:0;padding:0;overflow:hidden}
+#team-page *{box-sizing:border-box}
+#team-page .team-hero{width:100%;min-height:330px;padding:76px clamp(22px,6vw,90px) 64px;background:radial-gradient(ellipse at 50% 25%,#202d40 0%,#111b2a 48%,#070c15 100%);color:#f4f0e7;text-align:center;position:relative;overflow:hidden}
+#team-page .team-hero:before{content:"";position:absolute;inset:14px 3%;border:1px solid #c9a35e28;pointer-events:none}
+#team-page .team-hero .eyebrow{font-size:9px;letter-spacing:2.3px;color:#d5b477;margin:0 0 18px}
+#team-page .team-hero .eyebrow span{color:#8e754a;padding:0 8px}
+#team-page .team-hero h1{font:500 clamp(42px,6vw,70px)/1.1 "Playfair Display",serif;margin:0 0 18px;color:#f5f0e6}
+#team-page .team-hero h1 em,#team-page h2 em{color:#d0ad70;font-weight:500}
+#team-page .team-hero>p:last-of-type{max-width:650px;margin:0 auto;color:#c2cad3;font-size:13px;line-height:1.9}
+#team-page .team-ornament{display:flex;align-items:center;justify-content:center;gap:14px;color:#d5b477;margin-top:24px;font-size:11px}
+#team-page .team-ornament span{height:1px;width:75px;background:linear-gradient(90deg,transparent,#c9a35e)}
+#team-page .team-ornament span:last-child{transform:rotate(180deg)}
+#team-page .team-section{width:100%;max-width:1320px;margin:0 auto;padding:78px clamp(20px,4.5vw,64px) 88px;background:#f4f0e7}
+#team-page .team-heading{display:flex;justify-content:space-between;align-items:end;gap:40px;margin:0 0 38px}
+#team-page .team-heading .section-label{margin:0 0 16px;font-size:9px;letter-spacing:2px;color:#a1844e}
+#team-page .team-heading h2{font:500 clamp(32px,4vw,48px)/1.15 "Playfair Display",serif;margin:0;color:#182331}
+#team-page .team-heading>p{max-width:360px;margin:0 0 4px;font-size:12px;line-height:1.9;color:#68717d}
+#team-page .team-grid{display:grid!important;width:100%;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;align-items:stretch}
+#team-page .team-card{display:flex;flex-direction:column;min-width:0;width:100%;margin:0;padding:0;background:#0b1421;border:1px solid #b99150;border-radius:8px;overflow:hidden;box-shadow:0 12px 28px #0a142018}
+#team-page .team-photo{display:block;width:100%;aspect-ratio:4/3;height:auto;min-height:0;overflow:hidden;background:#111b2a;border-bottom:1px solid #b99150}
+#team-page .team-photo img{display:block!important;width:100%!important;height:100%!important;max-width:none!important;object-fit:cover;object-position:center 34%;margin:0;padding:0}
+#team-page .team-info{display:flex;flex-direction:column;flex:1;min-width:0;padding:22px 22px 23px;background:linear-gradient(145deg,#132033,#09111d)}
+#team-page .team-index{font:600 8px "DM Sans",sans-serif;letter-spacing:1.6px;color:#d0ad70;margin:0 0 9px;min-height:0}
+#team-page .team-index span{color:#a7aebb}
+#team-page .team-info h3{font:500 clamp(20px,2vw,25px)/1.2 "Playfair Display",serif;color:#f4ead8;margin:0 0 9px;overflow-wrap:anywhere}
+#team-page .team-role{font-size:9px;line-height:1.6;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:#d5b477;margin:0 0 13px;min-height:0}
+#team-page .team-desc{font-size:11px;line-height:1.8;color:#c2cad3;margin:0 0 20px;min-height:0;flex:1}
+#team-page .team-link{display:flex;justify-content:space-between;align-items:center;gap:10px;border-top:1px solid #c9a35e55;padding-top:15px;text-decoration:none;color:#e4c17f;font-size:8px;font-weight:700;letter-spacing:1px}
+#team-page .team-link span{font-size:15px}
+#team-page .team-disclaimer{max-width:900px;margin:28px auto 0;color:#777f86;font-size:9px;line-height:1.8;text-align:center}
+#team-page .team-bottom{background:radial-gradient(ellipse at center,#1b293b,#080d17 75%);color:#f4f0e7;text-align:center;padding:72px 20px 80px}
+#team-page .team-bottom h2{font:500 clamp(30px,4vw,46px)/1.2 "Playfair Display",serif;color:#f4f0e7;margin:20px 0 26px}
+#team-page .team-bottom .section-label{font-size:9px;letter-spacing:2px;color:#d0ad70}
+@media(max-width:900px){#team-page .team-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:20px}#team-page .team-section{padding-left:28px;padding-right:28px}}
+@media(max-width:620px){#team-page .team-hero{min-height:0;padding:58px 22px 52px}#team-page .team-hero h1{font-size:44px}#team-page .team-hero>p:last-of-type{font-size:12px}#team-page .team-section{padding:55px 18px 62px}#team-page .team-heading{display:block;margin-bottom:28px}#team-page .team-heading h2{font-size:36px}#team-page .team-heading>p{margin-top:14px}#team-page .team-grid{grid-template-columns:minmax(0,1fr)!important;gap:22px}#team-page .team-photo{aspect-ratio:16/10}#team-page .team-info{padding:20px 19px 21px}#team-page .team-info h3{font-size:25px}#team-page .team-desc{font-size:12px}#team-page .team-bottom{padding:60px 20px 65px}}
+
