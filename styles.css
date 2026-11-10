@@ -64,9 +64,8 @@
 .site-header-partner .parent-company{
   display:flex;flex-direction:row;align-items:center;justify-content:center;gap:12px;
   width:fit-content;max-width:310px;min-width:0;min-height:65px;padding:9px 14px;
-  background:transparent;border:1px solid #c9a35e;border-radius:5px;
-  box-shadow:inset 0 0 0 1px #c9a35e2c,0 0 22px #c9a35e0a;
-  text-decoration:none;position:relative;margin:0;
+  background:transparent;border:0;border-radius:0;
+  box-shadow:none;text-decoration:none;position:relative;margin:0;padding:0;
 }
 .site-header-partner .parent-company::before,.site-header-partner .parent-company::after{content:none}
 .site-header-partner .ovb-mark{display:block;flex:0 0 45px;width:45px;height:46px;object-fit:contain;background:transparent}
@@ -83,7 +82,7 @@
   .site-header.site-header-partner{grid-template-columns:105px minmax(0,1fr) auto;padding:0 18px;gap:12px}
   .site-header-partner .nav{gap:12px}
   .site-header-partner .nav a{font-size:9px}
-  .site-header-partner .parent-company{max-width:230px;padding:8px 9px;gap:8px}
+  .site-header-partner .parent-company{max-width:230px;padding:0;gap:8px}
   .site-header-partner .ovb-mark{width:35px;height:39px;flex-basis:35px}
   .site-header-partner .ovb-copy strong{font-size:10px}
   .site-header-partner .ovb-copy small{font-size:7px;letter-spacing:.6px}
@@ -97,7 +96,7 @@
   .site-header-partner .brand img{max-height:62px}
   .site-header-partner .parent-company{
     grid-column:2;grid-row:1;justify-self:center;max-width:100%;min-width:0;
-    width:100%;min-height:53px;padding:6px 8px;gap:8px;border-radius:4px;
+    width:100%;min-height:0;padding:0;gap:8px;border-radius:0;
   }
   .site-header-partner .ovb-mark{width:32px;height:36px;flex:0 0 32px}
   .site-header-partner .ovb-copy{gap:3px}
@@ -117,8 +116,19 @@
 }
 @media(max-width:360px){
   .site-header.site-header-partner{grid-template-columns:64px minmax(0,1fr) 30px;gap:5px;padding:0 7px}
-  .site-header-partner .parent-company{padding:5px 5px;gap:5px}
+  .site-header-partner .parent-company{padding:0;gap:5px}
   .site-header-partner .ovb-mark{width:26px;height:31px;flex-basis:26px}
   .site-header-partner .ovb-copy strong{font-size:8px}
   .site-header-partner .ovb-copy small{font-size:6px}
 }
+
+/* Final preference: gold OVB mark, fully transparent, no frame or badge */
+.site-header-partner .parent-company,
+.site-header-partner .parent-company:hover,
+.site-header-partner .parent-company:focus{
+  border:0!important;outline:0!important;box-shadow:none!important;
+  background:transparent!important;border-radius:0!important;
+}
+.site-header-partner .parent-company::before,
+.site-header-partner .parent-company::after{display:none!important;content:none!important}
+.site-header-partner .ovb-mark{filter:none!important;background:transparent!important}

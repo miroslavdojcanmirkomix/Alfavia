@@ -1,12 +1,9 @@
-ALFAVIA – upravené záhlavie OVB
+ALFAVIA – finálna úprava loga OVB
 
-Záhlavie obsahuje transparentnú zlatú verziu značky OVB (bez bieleho obdĺžnika),
-orámovanie v zlatej farbe a presné označenia:
-OVB ALLFINANZ SLOVENSKO
-SAMOSTATNÝ FINANČNÝ AGENT
-
-Úprava je aplikovaná na všetky HTML podstránky. Mobilné záhlavie má samostatné
-rozmery, aby sa logo ALFAVIA, značka OVB a menu neprekrývali.
+Logo OVB je teraz v zlatej farbe, s transparentným pozadím.
+Odstránený je rámik, biela výplň aj kartičkový efekt.
+Texty OVB ALLFINANZ SLOVENSKO a SAMOSTATNÝ FINANČNÝ AGENT zostávajú vedľa loga.
+Úprava je spoločná pre všetky podstránky a responzívna pre mobil.
 
 Nahraj celý obsah ZIP-u do hlavného priečinka GitHub repozitára a potvrď Commit changes.
-Pred komerčným zverejnením si over súhlas na použitie loga OVB a správnosť právneho označenia.
+Pred zverejnením si over oprávnenie používať upravené logo OVB.
