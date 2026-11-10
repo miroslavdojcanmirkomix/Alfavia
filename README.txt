@@ -1,16 +1,15 @@
-OPRAVA LOGA ALFAVIA – NAHRAĎ CELÚ ŠTRUKTÚRU WEBU
+ALFAVIA – viacstránkový web pre GitHub Pages
 
-V GitHube nahraď v hlavnom priečinku tieto súbory:
-1. index.html
-2. styles.css
-3. script.js
-4. alfavia-logo-transparent.png
+Súbory v tomto balíku nahrajte do HLAVNÉHO priečinka repozitára Alfavia.
+Nahraďte existujúce súbory s rovnakými názvami a pridajte nové HTML stránky a logo.
+
+Hlavná stránka: index.html
+Podstránky: o-nas.html, sluzby.html, byvanie-hypoteky.html, uvery-financovanie.html, poistenie.html, investicie.html, kontakt.html
+Spoločné súbory: styles.css, script.js, alfavia-logo-transparent.png
 
 Dôležité:
-- Nahraj aj nový index.html. Samotná výmena obrázka a CSS nestačí, ak stará stránka stále odkazuje na pôvodný obrázok.
-- Nový obrázok má odlišný názov alfavia-logo-transparent.png, aby sa obišla vyrovnávacia pamäť.
-- Súbory nahraj priamo do koreňového priečinka repozitára, nie do vnoreného priečinka.
-- Ak sa na GitHube zobrazí otázka na nahradenie existujúceho súboru, potvrď ju.
-- Po nahratí otvor stránku v anonymnom okne alebo vymaž vyrovnávaciu pamäť prehliadača.
-
-PNG má priehľadné pozadie. Header aj hlavné logo teraz používajú ten istý priehľadný súbor.
+- Rozbaľte ZIP a nahrajte OBSAH priečinka priamo do koreňa repozitára, nie samotný nadradený priečinok.
+- GitHub Pages bude zobrazovať každú stránku na vlastnej adrese, napr. /o-nas.html alebo /kontakt.html.
+- Kontaktný formulár je zatiaľ iba vizuálny a neposiela údaje.
+- Administrácia/CMS, databáza a bezpečné ukladanie dopytov nie sú súčasťou statickej verzie.
+- Pred komerčným spustením doplniť právne údaje, identitu prevádzkovateľa, skutočné oprávnenia, kontakty, GDPR/cookies a preveriť používanie značky.

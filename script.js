@@ -1,16 +1,1 @@
-const menuButton = document.querySelector(".menu-button");
-const nav = document.querySelector("nav");
-menuButton?.addEventListener("click", () => {
-  const isOpen = nav.classList.toggle("open");
-  menuButton.setAttribute("aria-expanded", String(isOpen));
-});
-document.querySelectorAll("nav a").forEach(link => link.addEventListener("click", () => {
-  nav.classList.remove("open");
-  menuButton?.setAttribute("aria-expanded", "false");
-}));
-document.getElementById("year").textContent = new Date().getFullYear();
-document.getElementById("contactForm")?.addEventListener("submit", event => {
-  event.preventDefault();
-  document.getElementById("formNote").textContent =
-    "Toto je zatiaľ ukážkový formulár. Pred ostrým spustením ho treba pripojiť k zabezpečenému odosielaniu.";
-});
+const menuButton=document.querySelector(".menu-toggle");const nav=document.querySelector(".nav");menuButton?.addEventListener("click",()=>{const open=nav.classList.toggle("open");menuButton.setAttribute("aria-expanded",String(open));});document.querySelectorAll(".nav a").forEach(a=>a.addEventListener("click",()=>{nav.classList.remove("open");menuButton?.setAttribute("aria-expanded","false");}));document.querySelectorAll("#year").forEach(el=>el.textContent=new Date().getFullYear());document.getElementById("contactForm")?.addEventListener("submit",e=>{e.preventDefault();document.getElementById("formNote").textContent="Formulár je zatiaľ ukážkový. Pred ostrým spustením ho treba pripojiť na zabezpečené odosielanie.";});
